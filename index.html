@@ -1,46 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Academic Self-Introduction</title>
     <meta charset="UTF-8">
+    <title>Vasu Dubey</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 220px;
+            border-right: 1px solid #ccc;
+            padding: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar li {
+            padding: 10px;
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .sidebar li a:hover {
+            background-color: #eee;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .content-inner {
+            max-width: 700px;
+        }
+    </style>
     <script>
-        function showContent(section) {
+        function show(section) {
             const sections = {
-                about: `<h2>About Me</h2><p>I am a researcher interested in knowledge representation, logic, and computational epistemology.</p>`,
-                work: `<h2>Work</h2><p>Currently, I work at the Department of Philosophy, focusing on formal methods in epistemology.</p>`,
-                interests: `<h2>Things I Find Interesting</h2><p>Category theory, semiotics, classical literature, proof theory, and early modern philosophy.</p>`,
-                bookshelf: `<h2>Bookshelf</h2><ul><li>"Gödel, Escher, Bach" by Douglas Hofstadter</li><li>"The Logic of Scientific Discovery" by Karl Popper</li><li>"Tractatus Logico-Philosophicus" by Ludwig Wittgenstein</li></ul>`,
-                people: `<h2>People</h2><p>Influenced by: Hilary Putnam, Saul Kripke, and Amie Thomasson.</p>`,
-                movies: `<h2>Movies</h2><p>Films I admire include: "Stalker" (1979), "The Mirror" (1975), and "My Dinner with Andre" (1981).</p>`
+                about: `
+                    <h2>About Me</h2>
+                    <p>I am Vasu Dubey, currently working at <strong>Resonance</strong>, where I contribute to the design and development of AI-powered devices for <em>speech restoration</em>. My background spans applied machine learning, signal processing, and cognitive modeling. My interests lie at the intersection of human communication and computation.</p>
+                `,
+                work: `
+                    <h2>Work</h2>
+                    <p>At Resonance, we’re building assistive systems that help individuals recover or regain lost vocal ability using real-time neural speech synthesis. I work on model architecture design, evaluation pipelines, and clinical-grade robustness. Previously, I’ve contributed to NLP research and low-resource language tools.</p>
+                `,
+                interests: `
+                    <h2>Things I Find Interesting</h2>
+                    <ul>
+                        <li>Computational models of cognition and memory</li>
+                        <li>Philosophy of mind and embodied intelligence</li>
+                        <li>Tools for thought and augmentation of reasoning</li>
+                        <li>Analog electronics and minimalist hardware</li>
+                        <li>History of science and conceptual revolutions</li>
+                    </ul>
+                `,
+                bookshelf: `
+                    <h2>Bookshelf</h2>
+                    <ul>
+                        <li><em>The Brothers Karamazov</em> – Fyodor Dostoevsky</li>
+                        <li><em>The Phenomenology of Spirit</em> – G.W.F. Hegel</li>
+                        <li><em>Tractatus Logico-Philosophicus</em> – Ludwig Wittgenstein</li>
+                        <li><em>I and Thou</em> – Martin Buber</li>
+                        <li><em>The Second Sex</em> – Simone de Beauvoir</li>
+                    </ul>
+                `,
+                people: `
+                    <h2>People</h2>
+                    <ul>
+                        <li>Wittgenstein – for his clarity and his silences</li>
+                        <li>Iris Murdoch – for ethics rooted in attention</li>
+                        <li>Norbert Wiener – for early thinking on systems and feedback</li>
+                        <li>Simone Weil – for depth, austerity, and truth</li>
+                        <li>Marvin Minsky – for his strange and sharp metaphors</li>
+                    </ul>
+                `,
+                movies: `
+                    <h2>Movies</h2>
+                    <ul>
+                        <li><em>Stalker</em> – Tarkovsky</li>
+                        <li><em>The Mirror</em> – Tarkovsky</li>
+                        <li><em>My Dinner with Andre</em> – Louis Malle</li>
+                        <li><em>2001: A Space Odyssey</em> – Stanley Kubrick</li>
+                        <li><em>Sans Soleil</em> – Chris Marker</li>
+                    </ul>
+                `
             };
-            document.getElementById('content').innerHTML = sections[section];
+            document.getElementById('content-inner').innerHTML = sections[section];
         }
     </script>
 </head>
 <body>
 
-<!-- Layout using table to position sidebar and content -->
-<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
-    <tr valign="top">
-        <!-- Sidebar -->
-        <td width="200">
-            <ul style="list-style-type: none; margin: 0; padding: 0;">
-                <li><a href="#" onclick="showContent('about')">About Me</a></li>
-                <li><a href="#" onclick="showContent('work')">Work</a></li>
-                <li><a href="#" onclick="showContent('interests')">Things I Find Interesting</a></li>
-                <li><a href="#" onclick="showContent('bookshelf')">Bookshelf</a></li>
-                <li><a href="#" onclick="showContent('people')">People</a></li>
-                <li><a href="#" onclick="showContent('movies')">Movies</a></li>
-            </ul>
-        </td>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" onclick="show('about')">About Me</a></li>
+            <li><a href="#" onclick="show('work')">Work</a></li>
+            <li><a href="#" onclick="show('interests')">Interests</a></li>
+            <li><a href="#" onclick="show('bookshelf')">Bookshelf</a></li>
+            <li><a href="#" onclick="show('people')">People</a></li>
+            <li><a href="#" onclick="show('movies')">Movies</a></li>
+        </ul>
+    </div>
 
-        <!-- Main Content -->
-        <td align="center" id="content">
+    <!-- Main Content -->
+    <div class="content">
+        <div class="content-inner" id="content-inner">
             <h2>Welcome</h2>
-            <p>Click a section on the left to learn more.</p>
-        </td>
-    </tr>
-</table>
+            <p>This is the personal page of Vasu Dubey. Use the menu to explore more.</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
