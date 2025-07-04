@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Self-Introduction</title>
+    <meta charset="UTF-8">
+    <script>
+        function showContent(section) {
+            const sections = {
+                about: `<h2>About Me</h2><p>I am a researcher interested in knowledge representation, logic, and computational epistemology.</p>`,
+                work: `<h2>Work</h2><p>Currently, I work at the Department of Philosophy, focusing on formal methods in epistemology.</p>`,
+                interests: `<h2>Things I Find Interesting</h2><p>Category theory, semiotics, classical literature, proof theory, and early modern philosophy.</p>`,
+                bookshelf: `<h2>Bookshelf</h2><ul><li>"Gödel, Escher, Bach" by Douglas Hofstadter</li><li>"The Logic of Scientific Discovery" by Karl Popper</li><li>"Tractatus Logico-Philosophicus" by Ludwig Wittgenstein</li></ul>`,
+                people: `<h2>People</h2><p>Influenced by: Hilary Putnam, Saul Kripke, and Amie Thomasson.</p>`,
+                movies: `<h2>Movies</h2><p>Films I admire include: "Stalker" (1979), "The Mirror" (1975), and "My Dinner with Andre" (1981).</p>`
+            };
+            document.getElementById('content').innerHTML = sections[section];
+        }
+    </script>
+</head>
+<body>
+
+<!-- Layout using table to position sidebar and content -->
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+    <tr valign="top">
+        <!-- Sidebar -->
+        <td width="200">
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li><a href="#" onclick="showContent('about')">About Me</a></li>
+                <li><a href="#" onclick="showContent('work')">Work</a></li>
+                <li><a href="#" onclick="showContent('interests')">Things I Find Interesting</a></li>
+                <li><a href="#" onclick="showContent('bookshelf')">Bookshelf</a></li>
+                <li><a href="#" onclick="showContent('people')">People</a></li>
+                <li><a href="#" onclick="showContent('movies')">Movies</a></li>
+            </ul>
+        </td>
+
+        <!-- Main Content -->
+        <td align="center" id="content">
+            <h2>Welcome</h2>
+            <p>Click a section on the left to learn more.</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
