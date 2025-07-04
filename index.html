@@ -18,7 +18,7 @@
         }
         .sidebar {
             display: table-cell;
-            width: 200px;
+            width: 250px; /* Increased sidebar width */
             vertical-align: top;
         }
         .content {
@@ -32,7 +32,7 @@
             padding: 0;
         }
         .nav li {
-            margin: 0;
+            margin: 10px 0; /* Increased spacing between navigation items */
         }
         .nav a {
             text-decoration: none;
@@ -65,7 +65,7 @@
                         <li>History of science and conceptual revolutions</li>
                     </ul>
                 `,
-                bookshelf:
+                bookshelf: `
                 <h2>Bookshelf</h2>
                 <ul>
     <li>The Brothers Karamazov – Fyodor Dostoevsky</li>
@@ -81,7 +81,6 @@
     <li>The Master and Margarita – Mikhail Bulgakov</li>
     <li>We – Yevgeny Zamyatin</li>
 
-    <!-- French & Existentialism -->
     <li>The Stranger – Albert Camus</li>
     <li>The Plague – Albert Camus</li>
     <li>The Fall – Albert Camus</li>
@@ -93,7 +92,6 @@
     <li>She Came to Stay – Simone de Beauvoir</li>
     <li>Memories of a Dutiful Daughter – Simone de Beauvoir</li>
 
-    <!-- German Philosophy -->
     <li>Thus Spoke Zarathustra – Friedrich Nietzsche</li>
     <li>Beyond Good and Evil – Friedrich Nietzsche</li>
     <li>The Gay Science – Friedrich Nietzsche</li>
@@ -104,7 +102,6 @@
     <li>Poetry, Language, Thought – Martin Heidegger</li>
     <li>Letters to a Young Poet – Rainer Maria Rilke</li>
 
-    <!-- Vienna Circle & Analytic Thought -->
     <li>Tractatus Logico-Philosophicus – Ludwig Wittgenstein</li>
     <li>Philosophical Investigations – Ludwig Wittgenstein</li>
     <li>The Logic of Scientific Discovery – Karl Popper</li>
@@ -112,7 +109,6 @@
     <li>The Structure of Scientific Revolutions – Thomas Kuhn</li>
     <li>Word and Object – W.V.O. Quine</li>
 
-    <!-- Modernism & Postmodernism -->
     <li>Ulysses – James Joyce</li>
     <li>Finnegans Wake – James Joyce</li>
     <li>A Portrait of the Artist as a Young Man – James Joyce</li>
@@ -123,7 +119,6 @@
     <li>Nadja – André Breton</li>
     <li>Delta of Venus – Anaïs Nin</li>
 
-    <!-- American Literature & Beat Generation -->
     <li>On the Road – Jack Kerouac</li>
     <li>The Dharma Bums – Jack Kerouac</li>
     <li>Big Sur – Jack Kerouac</li>
@@ -142,7 +137,6 @@
     <li>Song of Solomon – Toni Morrison</li>
     <li>Beloved – Toni Morrison</li>
 
-    <!-- Continental Philosophy & Theory -->
     <li>Discipline and Punish – Michel Foucault</li>
     <li>The Order of Things – Michel Foucault</li>
     <li>Madness and Civilization – Michel Foucault</li>
@@ -154,7 +148,6 @@
     <li>The Postmodern Condition – Jean-François Lyotard</li>
     <li>The Society of the Spectacle – Guy Debord</li>
 
-    <!-- Mysticism, Mind, and Thought -->
     <li>I and Thou – Martin Buber</li>
     <li>The Book of Disquiet – Fernando Pessoa</li>
     <li>Being Peace – Thich Nhat Hanh</li>
@@ -166,7 +159,6 @@
     <li>The Way of Zen – Alan Watts</li>
     <li>This Is It – Alan Watts</li>
 
-    <!-- Cognitive Science & Mind -->
     <li>Gödel, Escher, Bach – Douglas Hofstadter</li>
     <li>I Am a Strange Loop – Douglas Hofstadter</li>
     <li>The Mind’s I – Dennett & Hofstadter</li>
@@ -175,7 +167,6 @@
     <li>Thinking, Fast and Slow – Daniel Kahneman</li>
     <li>Metamagical Themas – Douglas Hofstadter</li>
 
-    <!-- Poetry & Aphorism -->
     <li>The Cantos – Ezra Pound</li>
     <li>Leaves of Grass – Walt Whitman</li>
     <li>The Waste Land – T.S. Eliot</li>
@@ -188,7 +179,6 @@
     <li>A Season in Hell – Arthur Rimbaud</li>
     <li>Illuminations – Arthur Rimbaud</li>
 
-    <!-- Political & Radical Thought -->
     <li>The Wretched of the Earth – Frantz Fanon</li>
     <li>Black Skin, White Masks – Frantz Fanon</li>
     <li>Pedagogy of the Oppressed – Paulo Freire</li>
@@ -197,14 +187,13 @@
     <li>The Communist Manifesto – Karl Marx & Friedrich Engels</li>
     <li>The Conquest of Bread – Peter Kropotkin</li>
 
-    <!-- Experimental Fiction -->
     <li>House of Leaves – Mark Z. Danielewski</li>
     <li>If on a Winter’s Night a Traveler – Italo Calvino</li>
     <li>Invisible Cities – Italo Calvino</li>
     <li>Pale Fire – Vladimir Nabokov</li>
     <li>The Unbearable Lightness of Being – Milan Kundera</li>
     <li>Being and Event – Alain Badiou</li>
-              </ul>
+                </ul>`,
                 people: `
                     <h2>People</h2>
                     <ul>
@@ -218,7 +207,6 @@
                 movies: `
                     <h2>Movies</h2>
 <ul>
-    <!-- Tarkovsky -->
     <li>Stalker – Andrei Tarkovsky</li>
     <li>The Mirror – Andrei Tarkovsky</li>
     <li>Solaris – Andrei Tarkovsky</li>
@@ -227,7 +215,6 @@
     <li>Ivan’s Childhood – Andrei Tarkovsky</li>
     <li>The Sacrifice – Andrei Tarkovsky</li>
 
-    <!-- Ingmar Bergman -->
     <li>Persona – Ingmar Bergman</li>
     <li>The Seventh Seal – Ingmar Bergman</li>
     <li>Cries and Whispers – Ingmar Bergman</li>
@@ -236,7 +223,6 @@
     <li>Hour of the Wolf – Ingmar Bergman</li>
     <li>Fanny and Alexander – Ingmar Bergman</li>
 
-    <!-- Jean-Luc Godard -->
     <li>Breathless – Jean-Luc Godard</li>
     <li>Alphaville – Jean-Luc Godard</li>
     <li>Pierrot le Fou – Jean-Luc Godard</li>
@@ -245,7 +231,6 @@
     <li>Le Mépris – Jean-Luc Godard</li>
     <li>Histoire(s) du cinéma – Jean-Luc Godard</li>
 
-    <!-- French New Wave & Postwar Europe -->
     <li>The 400 Blows – François Truffaut</li>
     <li>Jules and Jim – François Truffaut</li>
     <li>Hiroshima Mon Amour – Alain Resnais</li>
@@ -258,7 +243,6 @@
     <li>L’Eclisse – Michelangelo Antonioni</li>
     <li>Red Desert – Michelangelo Antonioni</li>
 
-    <!-- Eastern European Cinema -->
     <li>The Firemen’s Ball – Miloš Forman</li>
     <li>Daisies – Věra Chytilová</li>
     <li>The Shop on Main Street – Ján Kadár & Elmar Klos</li>
@@ -267,7 +251,6 @@
     <li>Man of Marble – Andrzej Wajda</li>
     <li>The Saragossa Manuscript – Wojciech Has</li>
 
-    <!-- Japanese Masters -->
     <li>Tokyo Story – Yasujirō Ozu</li>
     <li>Late Spring – Yasujirō Ozu</li>
     <li>Floating Weeds – Yasujirō Ozu</li>
@@ -279,7 +262,6 @@
     <li>The Face of Another – Hiroshi Teshigahara</li>
     <li>Fires on the Plain – Kon Ichikawa</li>
 
-    <!-- Experimental / Essay Film -->
     <li>Sans Soleil – Chris Marker</li>
     <li>La Jetée – Chris Marker</li>
     <li>Wavelength – Michael Snow</li>
@@ -292,7 +274,6 @@
     <li>The Holy Mountain – Alejandro Jodorowsky</li>
     <li>El Topo – Alejandro Jodorowsky</li>
 
-    <!-- American Modernism -->
     <li>My Dinner with Andre – Louis Malle</li>
     <li>The Thin Red Line – Terrence Malick</li>
     <li>Days of Heaven – Terrence Malick</li>
@@ -304,7 +285,6 @@
     <li>Paterson – Jim Jarmusch</li>
     <li>The Last Picture Show – Peter Bogdanovich</li>
 
-    <!-- Kubrick / Classical Visionaries -->
     <li>2001: A Space Odyssey – Stanley Kubrick</li>
     <li>Barry Lyndon – Stanley Kubrick</li>
     <li>The Shining – Stanley Kubrick</li>
@@ -316,7 +296,6 @@
     <li>Mulholland Drive – David Lynch</li>
     <li>Eraserhead – David Lynch</li>
 
-    <!-- Beat / Bohemian / Underground -->
     <li>Pull My Daisy – Robert Frank & Alfred Leslie</li>
     <li>Chappaqua – Conrad Rooks</li>
     <li>Shadows – John Cassavetes</li>
@@ -327,7 +306,6 @@
     <li>The Man Who Fell to Earth – Nicolas Roeg</li>
     <li>Performance – Nicolas Roeg & Donald Cammell</li>
 
-    <!-- Other Classics and Influences -->
     <li>Metropolis – Fritz Lang</li>
     <li>M – Fritz Lang</li>
     <li>Sunrise – F.W. Murnau</li>
@@ -343,7 +321,6 @@
     <li>Werckmeister Harmonies – Béla Tarr</li>
     <li>Satantango – Béla Tarr</li>
 
-    <!-- Documentaries / Hybrid / Other Notables -->
     <li>The Act of Killing – Joshua Oppenheimer</li>
     <li>The Look of Silence – Joshua Oppenheimer</li>
     <li>Cave of Forgotten Dreams – Werner Herzog</li>
@@ -355,6 +332,7 @@
     <li>Tokyo-Ga – Wim Wenders</li>
     <li>The Gleaners and I – Agnès Varda</li>
 </ul>
+                `
             };
             document.getElementById('content-inner').innerHTML = sections[section];
         }
