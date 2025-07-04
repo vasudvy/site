@@ -77,6 +77,28 @@
             color: #333;
             margin-top: 20px;
         }
+        /* --- Mobile Responsiveness Snippet --- */
+@media (max-width: 768px) {
+    .container, .row, .sidebar, .content {
+        display: block;
+        width: 100%;
+    }
+
+    .sidebar {
+        padding: 15px 0;
+        text-align: center;
+        width: auto;
+    }
+    
+    .content-inner {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .content-inner iframe {
+        height: 250px;
+    }
+}
     </style>
     <script>
         function show(section) {
