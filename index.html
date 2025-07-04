@@ -77,28 +77,57 @@
             color: #333;
             margin-top: 20px;
         }
+       /* --- Mobile Menu Functionality --- */
+        .menu-icon {
+            display: none; /* Hidden on desktop by default */
+        }
+
         /* --- Mobile Responsiveness Snippet --- */
-@media (max-width: 768px) {
-    .container, .row, .sidebar, .content {
-        display: block;
-        width: 100%;
-    }
+        @media (max-width: 768px) {
+            .container, .row, .sidebar, .content {
+                display: block;
+                width: 100%;
+            }
 
-    .sidebar {
-        padding: 15px 0;
-        text-align: center;
-        width: auto;
-    }
-    
-    .content-inner {
-        margin-top: 20px;
-        padding: 0 15px;
-    }
+            .sidebar {
+                padding: 0;
+                border-right: none;
+                background-color: transparent;
+            }
+            
+            /* Hide nav list by default on mobile */
+            .nav {
+                display: none;
+            }
+            
+            /* This class is toggled with JS to show the menu */
+            .nav-visible {
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+                background-color: #f9f9f9;
+            }
 
-    .content-inner iframe {
-        height: 250px;
-    }
-}
+            .menu-icon {
+                display: block;
+                padding: 15px 20px;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+            
+            .content-inner {
+                margin-top: 20px;
+                padding: 0 15px;
+            }
+
+            .content-inner iframe {
+                height: 250px;
+            }
+        }
     </style>
     <script>
         function show(section) {
@@ -146,7 +175,7 @@
                 `,
                 nopackland: `
                     <h2>NoPackLand</h2>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Hippie_trail-map-en.svg/1280px-Hippie_trail-map-en.svg.png" alt="A map of the historic hippie trail from Europe to South Asia">
+                    <img src="https://en.wikipedia.org/wiki/Hippie_trail#/media/File:Hippie_trail.svg" alt="A map of the historic hippie trail from Europe to South Asia">
                     <div class="manifesto">
                         <p>"Shatter the chains of a false consciousness, the quiet poison of a life planned in advance. The core of man's spirit comes from new experiences. Forget the map, the promotion, the 401k. There is a different kind of wealth, a currency of sunsets and solitude, of blisters on your feet and the raw, unfiltered truth of the wind."</p>
                         <p>"To exist on the fringe is not to be lost, but to be found. It is a deliberate pilgrimage away from the noise and into the symphony of the real. The trail, the mountain, the desert—these are not just places, they are states of being. They ask for nothing but your presence and give you everything in return. Go forth, with nothing but what you can carry, and find the person you were before the world told you who to be."</p>
