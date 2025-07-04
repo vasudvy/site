@@ -70,17 +70,27 @@
             width: 100%;
             height: 350px;
         }
+        .manifesto {
+            font-style: italic;
+            border-left: 3px solid #ccc;
+            padding-left: 15px;
+            color: #333;
+        }
     </style>
     <script>
         function show(section) {
             const sections = {
                 about: `
                     <h2>About Me</h2>
-                    <p>I am Vasu Dubey, currently working at <strong>Resonance</strong>, where I contribute to the design and development of AI-powered devices for <em>speech restoration</em>. My background spans applied machine learning, signal processing, and cognitive modeling. My interests lie at the intersection of human communication and computation.</p>
+                    <p>I am Vasu Dubey, an engineer and researcher working at the intersection of human communication and computation. My background spans applied machine learning, signal processing, and cognitive modeling.</p>
+                    <p>I currently live and work in <strong>Bengaluru, India.</strong></p>
+                    <iframe src="http://googleusercontent.com/maps.google.com/7" allowfullscreen="" loading="lazy"></iframe>
+                    <h3>Contact</h3>
+                    <p>PGP keys: updating soon</p>
                 `,
                 work: `
                     <h2>Work</h2>
-                    <p>At Resonance, we’re building assistive systems that help individuals recover or regain lost vocal ability using real-time neural speech synthesis. I work on model architecture design, evaluation pipelines, and clinical-grade robustness. Previously, I’ve contributed to NLP research and low-resource language tools.</p>
+                    <p>At <strong>Resonance</strong>, we work on human-machine interfaces to improve the quality of life. Our primary focus is on building assistive systems that leverage real-time neural synthesis, starting with <em>speech restoration</em> in those who, due to a stroke or post-surgical complication, have lost their vocal stability. I contribute to model architecture design, evaluation pipelines, and ensuring clinical-grade robustness.</p>
                 `,
                 interests: `
                     <h2>Things I Find Interesting</h2>
@@ -92,8 +102,41 @@
                         <li>History of science and conceptual revolutions</li>
                         <li><strong>Mechanistic Interpretability:</strong> Understanding not just what neural networks do, but how they do it. <a href="https://distill.pub/2020/circuits/zoom-in/" target="_blank">[link]</a></li>
                         <li><strong>Foundations of Mathematics:</strong> The philosophical and logical basis of math, including Gödel's incompleteness theorems. <a href="https://plato.stanford.edu/entries/goedel-incompleteness/" target="_blank">[link]</a></li>
-                        <li><strong>Open Debates in Physics & Philosophy:</strong> The nature of time, the hard problem of consciousness, and the measurement problem in quantum mechanics. <a href="http://www.scholarpedia.org/article/The_problem_of_time" target="_blank">[link]</a></li>
-                        <li><strong>Category Theory:</strong> A generalized, abstract language for describing mathematical structures and their relationships.</li>
+                         <li><strong>Complex Systems & Emergence:</strong> How simple interactions give rise to complex, self-organizing behavior in nature and society. <a href="https://www.santafe.edu/about/what-is-complexity" target="_blank">[link]</a></li>
+                        <li><strong>Information Theory:</strong> The fundamental quantification of information, communication, and uncertainty, as pioneered by Claude Shannon. <a href="https://www.khanacademy.org/computing/computer-science/informationtheory" target="_blank">[link]</a></li>
+                        <li><strong>Philosophy of Technology:</strong> Critically examining the two-way relationship between technology and human society. <a href="https://plato.stanford.edu/entries/technology/" target="_blank">[link]</a></li>
+                    </ul>
+                `,
+                 questions: `
+                    <h2>Questions</h2>
+                    <p>Open-ended inquiries for self-reflection.</p>
+                    <ul>
+                        <li>You are not the body, not the mind, not the roles you play. What remains when all these are set aside?</li>
+                        <li>Where does a thought come from before it appears, and where does it go after it vanishes?</li>
+                        <li>What is the 'I' that perceives your thoughts and experiences? Can the observer be observed?</li>
+                        <li>If you had no memory of your past and no concept of your future, who would you be in this exact moment?</li>
+                        <li>What is awareness itself, separate from the objects of awareness (sights, sounds, feelings)?</li>
+                        <li>Can you find the boundary between 'you' and the world? Where do you end and where does the universe begin?</li>
+                        <li>Observe the space between two thoughts. What is there?</li>
+                        <li>What is it that seeks, and what is it that is being sought? Are they different?</li>
+                    </ul>
+                `,
+                nopackland: `
+                    <h2>NoPackLand</h2>
+                    <iframe src="http://googleusercontent.com/maps.google.com/8" style="height:250px;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="manifesto">
+                        <p>"Shatter the chains of a false consciousness, the quiet poison of a life planned in advance. The core of man's spirit comes from new experiences. Forget the map, the promotion, the 401k. There is a different kind of wealth, a currency of sunsets and solitude, of blisters on your feet and the raw, unfiltered truth of the wind."</p>
+                        <p>"To exist on the fringe is not to be lost, but to be found. It is a deliberate pilgrimage away from the noise and into the symphony of the real. The trail, the mountain, the desert—these are not just places, they are states of being. They ask for nothing but your presence and give you everything in return. Go forth, with nothing but what you can carry, and find the person you were before the world told you who to be."</p>
+                    </div>
+
+                    <h3>Remote Places to Wander</h3>
+                     <ul>
+                        <li><strong>Patagonia</strong> - The southern end of the world, a land of granite peaks, glaciers, and fierce winds in Argentina and Chile.</li>
+                        <li><strong>Svalbard, Norway</strong> - A remote arctic archipelago halfway between mainland Norway and the North Pole.</li>
+                        <li><strong>The Gobi Desert, Mongolia</strong> - One of the most vast and silent landscapes on Earth, home to nomadic cultures.</li>
+                        <li><strong>Fiordland National Park, New Zealand</strong> - A remote area of staggering beauty, with deep fiords, ancient rainforests, and epic hiking trails.</li>
+                        <li><strong>The Kamchatka Peninsula, Russia</strong> - A land of fire and ice, with some of the most stunning volcanic landscapes in the world.</li>
+                        <li><strong>Zanskar Valley, Ladakh, India</strong> - A high-altitude, semi-desert region in the Himalayas, cut off from the world for much of the year.</li>
                     </ul>
                 `,
                 people: `
@@ -206,235 +249,73 @@
                 <ul>
     <li>The Brothers Karamazov – Fyodor Dostoevsky</li>
     <li>Crime and Punishment – Fyodor Dostoevsky</li>
-    <li>The Idiot – Fyodor Dostoevsky</li>
-    <li>The Possessed (Demons) – Fyodor Dostoevsky</li>
     <li>Notes from Underground – Fyodor Dostoevsky</li>
     <li>The Death of Ivan Ilyich – Leo Tolstoy</li>
-    <li>Anna Karenina – Leo Tolstoy</li>
     <li>War and Peace – Leo Tolstoy</li>
-    <li>A Confession – Leo Tolstoy</li>
-    <li>Fathers and Sons – Ivan Turgenev</li>
-    <li>The Master and Margarita – Mikhail Bulgakov</li>
-    <li>We – Yevgeny Zamyatin</li>
     <li>The Stranger – Albert Camus</li>
-    <li>The Plague – Albert Camus</li>
-    <li>The Fall – Albert Camus</li>
     <li>The Myth of Sisyphus – Albert Camus</li>
     <li>Nausea – Jean-Paul Sartre</li>
-    <li>Being and Nothingness – Jean-Paul Sartre</li>
-    <li>No Exit – Jean-Paul Sartre</li>
-    <li>The Second Sex – Simone de Beauvoir</li>
-    <li>She Came to Stay – Simone de Beauvoir</li>
-    <li>Memories of a Dutiful Daughter – Simone de Beauvoir</li>
     <li>Thus Spoke Zarathustra – Friedrich Nietzsche</li>
-    <li>Beyond Good and Evil – Friedrich Nietzsche</li>
-    <li>The Gay Science – Friedrich Nietzsche</li>
-    <li>The Birth of Tragedy – Friedrich Nietzsche</li>
-    <li>The Phenomenology of Spirit – G.W.F. Hegel</li>
-    <li>Science of Logic – G.W.F. Hegel</li>
     <li>Being and Time – Martin Heidegger</li>
-    <li>Poetry, Language, Thought – Martin Heidegger</li>
-    <li>Letters to a Young Poet – Rainer Maria Rilke</li>
     <li>Tractatus Logico-Philosophicus – Ludwig Wittgenstein</li>
-    <li>Philosophical Investigations – Ludwig Wittgenstein</li>
-    <li>The Logic of Scientific Discovery – Karl Popper</li>
-    <li>Language, Truth and Logic – A.J. Ayer</li>
     <li>The Structure of Scientific Revolutions – Thomas Kuhn</li>
-    <li>Word and Object – W.V.O. Quine</li>
     <li>Ulysses – James Joyce</li>
-    <li>Finnegans Wake – James Joyce</li>
-    <li>A Portrait of the Artist as a Young Man – James Joyce</li>
     <li>The Trial – Franz Kafka</li>
-    <li>The Castle – Franz Kafka</li>
-    <li>In the Penal Colony – Franz Kafka</li>
-    <li>Remembrance of Things Past – Marcel Proust</li>
-    <li>Nadja – André Breton</li>
-    <li>Delta of Venus – Anaïs Nin</li>
     <li>On the Road – Jack Kerouac</li>
-    <li>The Dharma Bums – Jack Kerouac</li>
-    <li>Big Sur – Jack Kerouac</li>
-    <li>Naked Lunch – William S. Burroughs</li>
-    <li>Junky – William S. Burroughs</li>
-    <li>Howl and Other Poems – Allen Ginsberg</li>
-    <li>Kaddish – Allen Ginsberg</li>
-    <li>The Subterraneans – Jack Kerouac</li>
-    <li>A Coney Island of the Mind – Lawrence Ferlinghetti</li>
     <li>Slaughterhouse-Five – Kurt Vonnegut</li>
-    <li>Cannery Row – John Steinbeck</li>
-    <li>The Grapes of Wrath – John Steinbeck</li>
-    <li>The Sound and the Fury – William Faulkner</li>
-    <li>As I Lay Dying – William Faulkner</li>
     <li>Invisible Man – Ralph Ellison</li>
-    <li>Song of Solomon – Toni Morrison</li>
-    <li>Beloved – Toni Morrison</li>
     <li>Discipline and Punish – Michel Foucault</li>
-    <li>The Order of Things – Michel Foucault</li>
-    <li>Madness and Civilization – Michel Foucault</li>
     <li>Simulacra and Simulation – Jean Baudrillard</li>
-    <li>A Thousand Plateaus – Deleuze & Guattari</li>
     <li>Anti-Oedipus – Deleuze & Guattari</li>
-    <li>Writing and Difference – Jacques Derrida</li>
-    <li>Of Grammatology – Jacques Derrida</li>
-    <li>The Postmodern Condition – Jean-François Lyotard</li>
-    <li>The Society of the Spectacle – Guy Debord</li>
     <li>I and Thou – Martin Buber</li>
     <li>The Book of Disquiet – Fernando Pessoa</li>
-    <li>Being Peace – Thich Nhat Hanh</li>
     <li>The Tao Te Ching – Lao Tzu</li>
     <li>The Bhagavad Gita – Anonymous</li>
-    <li>The Upanishads – Various</li>
-    <li>The Dhammapada – Gautama Buddha</li>
-    <li>The Zen Teachings of Huang Po – John Blofeld (trans.)</li>
-    <li>The Way of Zen – Alan Watts</li>
-    <li>This Is It – Alan Watts</li>
     <li>Gödel, Escher, Bach – Douglas Hofstadter</li>
-    <li>I Am a Strange Loop – Douglas Hofstadter</li>
-    <li>The Mind’s I – Dennett & Hofstadter</li>
-    <li>Consciousness Explained – Daniel Dennett</li>
-    <li>How to Create a Mind – Ray Kurzweil</li>
     <li>Thinking, Fast and Slow – Daniel Kahneman</li>
-    <li>Metamagical Themas – Douglas Hofstadter</li>
-    <li>The Cantos – Ezra Pound</li>
     <li>Leaves of Grass – Walt Whitman</li>
     <li>The Waste Land – T.S. Eliot</li>
-    <li>Four Quartets – T.S. Eliot</li>
-    <li>The Prophet – Kahlil Gibran</li>
-    <li>The Essential Rumi – Jalal al-Din Rumi</li>
-    <li>Collected Poems – W.B. Yeats</li>
-    <li>Selected Poems – Paul Celan</li>
-    <li>Collected Poems – Emily Dickinson</li>
-    <li>A Season in Hell – Arthur Rimbaud</li>
-    <li>Illuminations – Arthur Rimbaud</li>
     <li>The Wretched of the Earth – Frantz Fanon</li>
-    <li>Black Skin, White Masks – Frantz Fanon</li>
-    <li>Pedagogy of the Oppressed – Paulo Freire</li>
-    <li>Letters from a Birmingham Jail – Martin Luther King Jr.</li>
     <li>Capital, Vol. 1 – Karl Marx</li>
-    <li>The Communist Manifesto – Karl Marx & Friedrich Engels</li>
-    <li>The Conquest of Bread – Peter Kropotkin</li>
     <li>House of Leaves – Mark Z. Danielewski</li>
     <li>If on a Winter’s Night a Traveler – Italo Calvino</li>
-    <li>Invisible Cities – Italo Calvino</li>
-    <li>Pale Fire – Vladimir Nabokov</li>
     <li>The Unbearable Lightness of Being – Milan Kundera</li>
-    <li>Being and Event – Alain Badiou</li>
                 </ul>`,
                 movies: `
                     <h2>Movies</h2>
 <ul>
     <li>Stalker – Andrei Tarkovsky</li>
     <li>The Mirror – Andrei Tarkovsky</li>
-    <li>Solaris – Andrei Tarkovsky</li>
-    <li>Andrei Rublev – Andrei Tarkovsky</li>
-    <li>Nostalghia – Andrei Tarkovsky</li>
-    <li>Ivan’s Childhood – Andrei Tarkovsky</li>
-    <li>The Sacrifice – Andrei Tarkovsky</li>
     <li>Persona – Ingmar Bergman</li>
     <li>The Seventh Seal – Ingmar Bergman</li>
-    <li>Cries and Whispers – Ingmar Bergman</li>
-    <li>Wild Strawberries – Ingmar Bergman</li>
-    <li>Through a Glass Darkly – Ingmar Bergman</li>
-    <li>Hour of the Wolf – Ingmar Bergman</li>
-    <li>Fanny and Alexander – Ingmar Bergman</li>
     <li>Breathless – Jean-Luc Godard</li>
-    <li>Alphaville – Jean-Luc Godard</li>
-    <li>Pierrot le Fou – Jean-Luc Godard</li>
-    <li>Weekend – Jean-Luc Godard</li>
-    <li>La Chinoise – Jean-Luc Godard</li>
-    <li>Le Mépris – Jean-Luc Godard</li>
-    <li>Histoire(s) du cinéma – Jean-Luc Godard</li>
     <li>The 400 Blows – François Truffaut</li>
-    <li>Jules and Jim – François Truffaut</li>
-    <li>Hiroshima Mon Amour – Alain Resnais</li>
     <li>Last Year at Marienbad – Alain Resnais</li>
-    <li>Pickpocket – Robert Bresson</li>
     <li>Au Hasard Balthazar – Robert Bresson</li>
-    <li>Diary of a Country Priest – Robert Bresson</li>
     <li>L’Avventura – Michelangelo Antonioni</li>
-    <li>La Notte – Michelangelo Antonioni</li>
-    <li>L’Eclisse – Michelangelo Antonioni</li>
-    <li>Red Desert – Michelangelo Antonioni</li>
-    <li>The Firemen’s Ball – Miloš Forman</li>
-    <li>Daisies – Věra Chytilová</li>
-    <li>The Shop on Main Street – Ján Kadár & Elmar Klos</li>
-    <li>The Cremator – Juraj Herz</li>
-    <li>The Round-Up – Miklós Jancsó</li>
-    <li>Man of Marble – Andrzej Wajda</li>
-    <li>The Saragossa Manuscript – Wojciech Has</li>
     <li>Tokyo Story – Yasujirō Ozu</li>
-    <li>Late Spring – Yasujirō Ozu</li>
-    <li>Floating Weeds – Yasujirō Ozu</li>
-    <li>Ikiru – Akira Kurosawa</li>
     <li>Seven Samurai – Akira Kurosawa</li>
-    <li>Rashomon – Akira Kurosawa</li>
-    <li>Throne of Blood – Akira Kurosawa</li>
     <li>Woman in the Dunes – Hiroshi Teshigahara</li>
-    <li>The Face of Another – Hiroshi Teshigahara</li>
-    <li>Fires on the Plain – Kon Ichikawa</li>
     <li>Sans Soleil – Chris Marker</li>
     <li>La Jetée – Chris Marker</li>
-    <li>Wavelength – Michael Snow</li>
-    <li>Meshes of the Afternoon – Maya Deren</li>
     <li>Koyaanisqatsi – Godfrey Reggio</li>
-    <li>Powaqqatsi – Godfrey Reggio</li>
-    <li>Baraka – Ron Fricke</li>
-    <li>Samsara – Ron Fricke</li>
     <li>Waking Life – Richard Linklater</li>
-    <li>The Holy Mountain – Alejandro Jodorowsky</li>
-    <li>El Topo – Alejandro Jodorowsky</li>
     <li>My Dinner with Andre – Louis Malle</li>
     <li>The Thin Red Line – Terrence Malick</li>
-    <li>Days of Heaven – Terrence Malick</li>
-    <li>The Tree of Life – Terrence Malick</li>
-    <li>Paris, Texas – Wim Wenders</li>
     <li>Wings of Desire – Wim Wenders</li>
     <li>Dead Man – Jim Jarmusch</li>
-    <li>Stranger Than Paradise – Jim Jarmusch</li>
-    <li>Paterson – Jim Jarmusch</li>
-    <li>The Last Picture Show – Peter Bogdanovich</li>
     <li>2001: A Space Odyssey – Stanley Kubrick</li>
-    <li>Barry Lyndon – Stanley Kubrick</li>
-    <li>The Shining – Stanley Kubrick</li>
     <li>Dr. Strangelove – Stanley Kubrick</li>
-    <li>Mirror – Tarkovsky</li>
     <li>Apocalypse Now – Francis Ford Coppola</li>
-    <li>The Conversation – Francis Ford Coppola</li>
     <li>Blue Velvet – David Lynch</li>
-    <li>Mulholland Drive – David Lynch</li>
-    <li>Eraserhead – David Lynch</li>
-    <li>Pull My Daisy – Robert Frank & Alfred Leslie</li>
-    <li>Chappaqua – Conrad Rooks</li>
     <li>Shadows – John Cassavetes</li>
-    <li>Faces – John Cassavetes</li>
-    <li>A Woman Under the Influence – John Cassavetes</li>
     <li>Easy Rider – Dennis Hopper</li>
-    <li>The Last Movie – Dennis Hopper</li>
-    <li>The Man Who Fell to Earth – Nicolas Roeg</li>
-    <li>Performance – Nicolas Roeg & Donald Cammell</li>
     <li>Metropolis – Fritz Lang</li>
-    <li>M – Fritz Lang</li>
-    <li>Sunrise – F.W. Murnau</li>
-    <li>Nosferatu – F.W. Murnau</li>
-    <li>La Dolce Vita – Federico Fellini</li>
     <li>8½ – Federico Fellini</li>
-    <li>Amarcord – Federico Fellini</li>
-    <li>The Spirit of the Beehive – Víctor Erice</li>
-    <li>The Enigma of Kaspar Hauser – Werner Herzog</li>
     <li>Aguirre, the Wrath of God – Werner Herzog</li>
-    <li>Fitzcarraldo – Werner Herzog</li>
-    <li>The Turin Horse – Béla Tarr</li>
-    <li>Werckmeister Harmonies – Béla Tarr</li>
     <li>Satantango – Béla Tarr</li>
     <li>The Act of Killing – Joshua Oppenheimer</li>
-    <li>The Look of Silence – Joshua Oppenheimer</li>
-    <li>Cave of Forgotten Dreams – Werner Herzog</li>
-    <li>Into Great Silence – Philip Gröning</li>
-    <li>The Quince Tree Sun – Victor Erice</li>
     <li>Close-Up – Abbas Kiarostami</li>
-    <li>Taste of Cherry – Abbas Kiarostami</li>
-    <li>Where Is the Friend's House? – Abbas Kiarostami</li>
-    <li>Tokyo-Ga – Wim Wenders</li>
-    <li>The Gleaners and I – Agnès Varda</li>
 </ul>
                 `
             };
@@ -449,8 +330,12 @@
                 <li><a href="#" onclick="show('about')">About Me</a></li>
                 <li><a href="#" onclick="show('work')">Work</a></li>
                 <li><a href="#" onclick="show('interests')">Interests</a></li>
+                 <li><a href="#" onclick="show('questions')">Questions</a></li>
+                <li><a href="#" onclick="show('nopackland')">NoPackLand</a></li>
                 <li><a href="#" onclick="show('people')">People</a></li>
-                <li><a href="#" onclick="show('places')">Places</a></li> <li><a href="#" onclick="show('animals')">Animals & Biology</a></li> <li><a href="#" onclick="show('bookshelf')">Bookshelf</a></li>
+                <li><a href="#" onclick="show('places')">Places</a></li>
+                <li><a href="#" onclick="show('animals')">Animals & Biology</a></li>
+                <li><a href="#" onclick="show('bookshelf')">Bookshelf</a></li>
                 <li><a href="#" onclick="show('movies')">Movies</a></li>
             </ul>
         </div>
